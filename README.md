@@ -25,6 +25,10 @@ Ce projet est un système de contrôle pour un tank télécommandé Arduino, int
 
 ## Touches de la télécommande IR
 
+<table>
+<tr>
+<td>
+
 | Touche       | Fonction                  | Code         |
 |--------------|--------------------------|-------------|
 | Flèches ↑↓←→ | Déplacement              | Voir ci-dessous |
@@ -41,6 +45,17 @@ Ce projet est un système de contrôle pour un tank télécommandé Arduino, int
 | 6            | Vitesse automatique      | `0xA15EFF00` |
 | 7            | Pilote automatique       | `0xF708FF00` |
 | 0            | Menu paramètres          | `0xAD52FF00` |
+
+</td>
+<td>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/bb0b26a3-3b62-4267-b84b-5004fbe5095e" alt="Front View" width="300">
+</p>
+
+</td>
+</tr>
+</table>
 
 
 ## Matériel requis
@@ -76,6 +91,8 @@ Ce projet est un système de contrôle pour un tank télécommandé Arduino, int
 - **Fonctions modulaires** : gestion des moteurs, capteur ultrason, buzzer/klaxon, menu de paramètres, EEPROM, et code PIN.
 
 ## Images
+<p align="center">
 <img src="https://github.com/user-attachments/assets/91ceb904-e7c3-40d3-9e58-bea9f4743c09" alt="Front View" width="500" height="auto">
 <img src="https://github.com/user-attachments/assets/ed5b23ee-d5ec-4145-93c7-c00f6ccf086f" alt="LCD Dashboard" width="500" height="auto">
-![IMG_0904](https://github.com/user-attachments/assets/bb0b26a3-3b62-4267-b84b-5004fbe5095e)
+<img src="https://github.com/user-attachments/assets/bb0b26a3-3b62-4267-b84b-5004fbe5095e" alt="Télécomande IR" width="300" height="auto">
+<p>
