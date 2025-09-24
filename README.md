@@ -20,7 +20,7 @@ Ce projet est un système de contrôle pour un tank télécommandé Arduino, int
   - Veille automatique avec extinction du rétroéclairage après période d’inactivité.
 - **Buzzer/Klaxon configurable** : plusieurs styles de sons et alertes de proximité.
 - **EEPROM** : sauvegarde et restauration des paramètres (vitesse, modes, klaxon, code PIN).
-- **Code PIN et verrouillage** : contrôle d’accès par télécommande avec gestion des tentatives.
+- **Code PIN et verrouillage** : contrôle d’accès par télécommande avec gestion des tentatives. (le code pin de base est : **1111**)
 - **Fonction reboot via watchdog** pour réinitialiser le microcontrôleur si nécessaire.
 
 ## Touches de la télécommande IR
