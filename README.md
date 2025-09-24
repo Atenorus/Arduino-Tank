@@ -45,6 +45,8 @@ Ce projet est un système de contrôle pour un tank télécommandé Arduino, int
 | 6            | Vitesse automatique      | `0xA15EFF00` |
 | 7            | Pilote automatique       | `0xF708FF00` |
 | 0            | Menu paramètres          | `0xAD52FF00` |
+| #            | Enregistrer parametres   | `0xAD52FF00` |
+| *            | Redémarrer               | `0xAD52FF00` |
 
 </td>
 <td>
