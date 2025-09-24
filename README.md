@@ -1,5 +1,9 @@
 # Conqueror Tank - Arduino RC Tank Controller
 
+![Arduino](https://img.shields.io/badge/Arduino-Compatible-brightgreen)
+![C++](https://img.shields.io/badge/Language-C++-blue)
+
+
 ## Description
 Ce projet est un système de contrôle pour un tank télécommandé Arduino, intégrant à la fois des commandes manuelles via télécommande IR et un mode automatique avec capteurs ultrasons. Le tank dispose de fonctionnalités avancées telles que la gestion des vitesses, des modes de sécurité, un tableau de bord LCD, un buzzer/klaxon configurable et la sauvegarde des paramètres dans l’EEPROM.
 
@@ -19,9 +23,29 @@ Ce projet est un système de contrôle pour un tank télécommandé Arduino, int
 - **Code PIN et verrouillage** : contrôle d’accès par télécommande avec gestion des tentatives.
 - **Fonction reboot via watchdog** pour réinitialiser le microcontrôleur si nécessaire.
 
+## Touches de la télécommande IR
+
+| Touche       | Fonction                  | Code         |
+|--------------|--------------------------|-------------|
+| Flèches ↑↓←→ | Déplacement              | Voir ci-dessous |
+| Avant        | Déplacement avant        | `0xB946FF00` |
+| Arrière      | Déplacement arrière      | `0xEA15FF00` |
+| Gauche       | Déplacement gauche       | `0xBB44FF00` |
+| Droite       | Déplacement droite       | `0xBC43FF00` |
+| OK           | Klaxon                   | `0xBF40FF00` |
+| 1            | Vitesse 1                | `0xE916FF00` |
+| 2            | Vitesse 2                | `0xE619FF00` |
+| 3            | Vitesse 3                | `0xF20DFF00` |
+| 4            | Détecteur                | `0xF30CFF00` |
+| 5            | Frein                    | `0xE718FF00` |
+| 6            | Vitesse automatique      | `0xA15EFF00` |
+| 7            | Pilote automatique       | `0xF708FF00` |
+| 0            | Menu paramètres          | `0xAD52FF00` |
+
+
 ## Matériel requis
 
-- Carte Arduino compatible (ex. Arduino Uno, Nano, MKR WiFi 1010)
+- Carte Arduino compatible (devloper pour Mega2560)
 - Module télécommande IR et récepteur
 - Capteur ultrason (HC-SR04 ou équivalent)
 - LCD I2C 16x2
@@ -50,3 +74,8 @@ Ce projet est un système de contrôle pour un tank télécommandé Arduino, int
 - **`setup()`** : initialise le matériel, LCD, télécommande IR, et charge les paramètres depuis l’EEPROM.
 - **`loop()`** : gère la lecture de la télécommande, le mode automatique, la sécurité, l’affichage LCD et l’ajustement automatique de la vitesse.
 - **Fonctions modulaires** : gestion des moteurs, capteur ultrason, buzzer/klaxon, menu de paramètres, EEPROM, et code PIN.
+
+## Images
+<img src="https://github.com/user-attachments/assets/91ceb904-e7c3-40d3-9e58-bea9f4743c09" alt="Front View" width="500" height="auto">
+<img src="https://github.com/user-attachments/assets/ed5b23ee-d5ec-4145-93c7-c00f6ccf086f" alt="LCD Dashboard" width="500" height="auto">
+![IMG_0904](https://github.com/user-attachments/assets/bb0b26a3-3b62-4267-b84b-5004fbe5095e)
